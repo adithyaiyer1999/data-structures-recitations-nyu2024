@@ -127,6 +127,88 @@ public class HogwartsStudent extends Wizard {
 
 ### 5. Overloading
 
-Keeping away from Harry Pottere examples:
+Keeping away from Harry Potter examples:
+
+```
+public class Sum { 
+    // Overloaded sum(). This sum takes two int parameters 
+    public int sum(int x, int y) { return (x + y); } 
+  
+    // Overloaded sum(). This sum takes three int parameters 
+    public int sum(int x, int y, int z) 
+    { 
+        return (x + y + z); 
+    } 
+  
+    // Overloaded sum(). This sum takes two double 
+    // parameters 
+    public double sum(double x, double y) 
+    { 
+        return (x + y); 
+    } 
+  
+    // Driver code 
+    public static void main(String args[]) 
+    { 
+        Sum s = new Sum(); 
+        System.out.println(s.sum(10, 20)); 
+        System.out.println(s.sum(10, 20, 30)); 
+        System.out.println(s.sum(10.5, 20.5)); 
+    } 
+}
+```
+
+All 3 will work - depending on what you provide.
+
+### 6. Polymorphism
+
+```
+public class Main {
+    public static void main(String[] args) {
+        Wizard ron = new HogwartsStudent("Ron Weasley", "Gryffindor");
+        ron.castSpell(); // Output: Hogwarts student Ron Weasley from Gryffindor is casting a spell!
+    }
+}
+```
+
+Ron can just be defined as a wizard, and still be called.
+
+### 7. Casting
+
+Upcasting example : `Wizard ron = new HogwartsStudent("Ron Weasley", "Gryffindor");` 
+
+here : a hogwarts student is BEING considered a wizard
+
+Downcasting example: 
+```
+Wizard harry = new Wizard("Harry Potter", 18); // You're a wizard harry
+HogwartsStudent harryPotter = (HogwartsStudent) harry;
+```
+
+here : a wizard is just being thought as a hogwarts student
+
+
+### 8. Interface
+
+```
+public interface SpellCaster {
+    void castSpell();
+}
+
+public class Wizard implements SpellCaster {
+    private String name;
+
+    public Wizard(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public void castSpell() {
+        System.out.println("Wizard " + name + " is casting a spell!");
+    }
+}
+```
+
+here, `castSpell()` HAS to be defined by the class wizard since it implements the class SpellCaster
 
 
