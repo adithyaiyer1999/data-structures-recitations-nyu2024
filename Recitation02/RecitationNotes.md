@@ -7,7 +7,7 @@
 
 ### Question 1
 
-Given an integer array nums sorted in non-decreasing order, return  an array of the squares of each number sorted in non-decreasing order.
+Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
 
 Example 1:
 ```
@@ -28,7 +28,7 @@ Constraints:
 nums is sorted in non-decreasing order.
 ```
 ### Question 2
-Given a string s, reverse the order of characters in each word within a sentence while s>ll preserving whitespace and ini>al word order.
+Given a string s, reverse the order of characters in each word within a sentence while still preserving whitespace and initial word order.
 
 ```
 Input: "Let's take LeetCode contest"
@@ -36,7 +36,7 @@ Output: "s'teL ekat edoCteeL tsetnoc"
 ```
 
 ### Question 3
-Given an integer array nums, move all 0's to the end of it while maintaining the rela> ve order of the non-zero elements. Note that you must do this in-place without making a copy of the array.
+Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements. Note that you must do this in-place without making a copy of the array.
 
 ```
 Input :  arr[] = {1, 2, 0, 4, 3, 0, 5, 0};
@@ -68,7 +68,7 @@ nums[i] is either 0 or 1.
 0 <= k <= nums.length
 ```
 ### Question 5
-Given an array of positive integers nums and a posi>ve integer target, return the minimal length of a subarray whose sum is greater than or equal to target. If there is no such subarra y, return 0 instead.
+Given an array of positive integers nums and a posi>ve integer target, return the minimal length of a subarray whose sum is greater than or equal to target. If there is no such subarray, return 0 instead.
 
 Example 1:
 ```
